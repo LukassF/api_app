@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function App() {
-  const [backendData, setBackendData] = useState([{}]);
+  const [backendData, setBackendData] = useState([]);
 
   useEffect(() => {
     fetch("/api")
@@ -11,8 +11,13 @@ function App() {
 
   return (
     <>
-      {typeof backendData.users !== "undefined" &&
-        backendData.users.map((user) => <div key={user}>{user}</div>)}
+      {backendData.length !== 0 &&
+        backendData.map((item) => (
+          <div key={item._id}>
+            {item.name} {item.price}
+          </div>
+        ))}
+      <h1></h1>
     </>
   );
 }
