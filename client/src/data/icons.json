@@ -1,0 +1,27 @@
+[
+    {
+        "name":"Meat",
+        "src":"https://icon-library.com/images/meat-icon-png/meat-icon-png-5.jpg",
+        "width":"20px",
+        "color":"rgba(234, 132, 37,0.6)"
+    },
+    {
+        "name":"Spicy",
+        "src":"https://static.thenounproject.com/png/125870-200.png",
+        "width":"30px",
+        "color":"rgb(247, 121, 121)"
+    },
+    {
+        "name":"Plant Based",
+        "src":"https://cdn.onlinewebfonts.com/svg/img_40025.png",
+        "width":"17px",
+        "color":"rgb(193, 242, 116)"
+    },
+    {
+        "name":"Gluten Free",
+        "src":"https://img.icons8.com/ios11/12x/wheat.png",
+        "width":"20px",
+        "color":"rgb(247, 217, 128)"
+    }
+    
+]

@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import FoodCard from "./components/foodCard";
+import "./App.css";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 function App() {
   const [backendData, setBackendData] = useState([]);
@@ -11,13 +15,16 @@ function App() {
 
   return (
     <>
-      {backendData.length !== 0 &&
-        backendData.map((item) => (
-          <div key={item._id}>
-            {item.name} {item.price}
-          </div>
-        ))}
-      <h1></h1>
+      <Navbar />
+      <main className="container pt-5">
+        <div className="row">
+          {backendData.length !== 0 &&
+            backendData.map((item) => (
+              <FoodCard key={item._id} info={{ ...item }} />
+            ))}
+        </div>
+      </main>
+      <Footer />
     </>
   );
 }

@@ -13,6 +13,15 @@ const modelSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
+  ingredients: [
+    {
+      type: String,
+    },
+  ],
+  image: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("Model", modelSchema);
