@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="text-center text-lg-start bg-light text-muted">
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom border-top">
+    <footer className="text-center text-lg-start bg-dark text-light">
+      <section className="d-flex justify-content-center justify-content-lg-between p-4">
         <div className="me-5 d-none d-lg-block">
           <span>Find us on social networks:</span>
         </div>
